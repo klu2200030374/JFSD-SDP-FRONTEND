@@ -1,0 +1,85 @@
+/* Ensure the container takes the full height of the screen and fits properly */
+.admin-login-container {
+    display: flex;
+    justify-content: center;  /* Horizontally centers the box */
+    align-items: center;  /* Vertically centers the box */
+    min-height: 100vh;  /* Minimum height: full viewport height */
+    background-color: rgba(0, 0, 0, 0.1);  /* Light background */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Admin login box styling */
+  .admin-login-box {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  /* Heading */
+  .admin-login-box h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Form labels and input styling */
+  .admin-login-box form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .admin-login-box form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Button styling */
+  .admin-login-button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: #d37024;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .admin-login-button:hover {
+    background-color: #b05e1d;
+  }
+  
+  /* Adjust smaller screens layout */
+  @media (max-width: 480px) {
+    .admin-login-box {
+      padding: 15px;
+    }
+  
+    .admin-login-box form input {
+      padding: 6px;
+    }
+  
+    .admin-login-button {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  

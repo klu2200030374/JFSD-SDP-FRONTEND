@@ -1,0 +1,333 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Home Page Styles */
+/* Overall page container */
+.home-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f4f4f4; /* Soft background color */
+}
+
+/* Page heading */
+.home-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+/* Page description */
+.home-description {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Section heading alignment to center */
+.section-heading {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-left: 380px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Section description */
+.section-description {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+/* Grid layout for culture items */
+.culture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* Each culture item container */
+.culture-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.culture-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add slight shadow on hover */
+}
+
+/* Culture item image */
+.culture-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 5px solid #56a7a7;
+  margin-bottom: 15px;
+}
+
+/* Item heading */
+.item-heading {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+/* Item description */
+.item-description {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #56a7a7;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Flexbox layout for navbar content */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto; /* Adjust alignment */
+}
+
+/* Navbar logo styling with white font color */
+.navbar-logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Logo image styling */
+.logo-image {
+  height: 50px;
+  width: auto;
+}
+
+/* Styling for navbar links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* Each list item inside the navbar */
+.navbar-links li {
+  display: inline;
+}
+
+/* Link styles with white font color */
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Link hover effect */
+.navbar-links a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+/* About Us Page Styles */
+.about-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+
+/* About page heading */
+.about-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+/* About page description */
+.about-description {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Section heading in the About page */
+.section-heading {
+  font-size: 2rem;
+  color: #2c3e50;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+/* Section description in the About page */
+.section-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  flex: 1;
+}
+
+/* Section content with alternating image and description */
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.about-image {
+  width: 35%;
+  border-radius: 10px;
+  border: 3px solid #56a7a7;
+  object-fit: cover;
+}
+
+/* Alternating section layout */
+.about-content:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.about-content:nth-child(odd) {
+  flex-direction: row;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+}
+
+/* Contact Page Styles */
+.contact-container {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.contact-description {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.social-media {
+  flex: 1;
+  text-align: center;
+}
+
+.social-media h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon.linkedin {
+  background-color: #3b5998;
+}
+
+.social-icon.twitter {
+  background-color: #55acee;
+}
+
+.social-icon.instagram {
+  background-color: #e4405f;
+}
+
+.social-icon:hover {
+  opacity: 0.8;
+}
+
+/* Media Query for mobile devices */
+@media screen and (max-width: 768px) {
+  .contact-details {
+    flex-direction: column;
+    text-align: center;
+  }
+}
